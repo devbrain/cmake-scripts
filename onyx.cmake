@@ -1,1 +1,1 @@
-include(onyx_conan.cmake)
+include("onyx-conan")

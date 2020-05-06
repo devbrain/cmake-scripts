@@ -20,9 +20,14 @@ macro(onyx_setup_conan)
     
     conan_cmake_run(
       ${ARGN}
+      IMPORTS
+      "bin, *.dll -> bin"
+      "lib, *.dylib -> bin"
+      "lib, *.so -> bin"
       GENERATORS cmake_find_package
       BUILD missing
       BASIC_SETUP
+      
       )
     conan_load_buildinfo ()
   endif()
