@@ -51,7 +51,7 @@ macro(onyx_install_package)
     )
 
   configure_package_config_file(
-    ${CONFIG_FILE}
+    ${ONYX_INSTALL_CONFIG_FILE}
     ${CMAKE_BINARY_DIR}/cmake/${ONYX_INSTALL_PACKAGE_NAME}-config.cmake
     INSTALL_DESTINATION ${INSTALL_CONFIGDIR}
     )
