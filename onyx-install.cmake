@@ -45,7 +45,7 @@ macro(onyx_install_package)
 
 
   write_basic_package_version_file(
-    ${CMAKE_BINARY_DIR}/cmake/${PACKAGE_NAME}-config-version.cmake
+    ${CMAKE_BINARY_DIR}/cmake/${ONYX_INSTALL_PACKAGE_NAME}-config-version.cmake
     VERSION ${VERSION}
     COMPATIBILITY AnyNewerVersion
     )
