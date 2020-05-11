@@ -1,3 +1,3 @@
 include("onyx-conan")
-include("onyx-install.cmake")
+include("onyx-install")
 
