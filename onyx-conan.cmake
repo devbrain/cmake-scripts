@@ -1,4 +1,5 @@
 macro(onyx_setup_conan)
+  set(CMAKE_MODULE_PATH "${CMAKE_BINARY_DIR};${CMAKE_MODULE_PATH}")
   if(CONAN_EXPORTED) # in conan local cache
     message (STATUS "IN CONAN BUILD")
     if (ONYX_CONAN_FIND_PACKAGE)
